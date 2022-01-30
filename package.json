@@ -6,6 +6,7 @@
     "node": ">=16"
   },
   "scripts": {
+    "setup": "concurrently \"cd frontend && yarn install\"  \"cd backend && yarn install\"",
     "start": "concurrently --kill-others \"cd frontend && ./start.sh\" \"cd backend && ./start.sh\""
   },
   "keywords": [],

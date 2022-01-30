@@ -2,6 +2,14 @@
 
 The Anythink Market backend is Node web app written with [Express](https://expressjs.com/)
 
+## Prerequisites
+1. Our backend server requires a live MongoDB server.
+You can setup a local docker-based server by using the following command:
+`sudo docker run --name my-mongo -p 27017:27017 -d mongo`
+
+2. Place a .env file under `/backend` with your MongoDB endpoint for example:
+`MONGODB_URI='mongodb://127.0.0.1/my_database'`
+
 ## Getting started
 
 To start the app use: `./start.sh` from the backend directory.
